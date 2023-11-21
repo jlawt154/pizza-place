@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
+            body {
+  margin: 0;
+  padding: 0;
+}
+div.container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: sans-serif;
+  box-shadow: 0 0 40px 15px;
+}
+img#banner-logo {
+  width: 100%;
+}
+h1 {
+  color: maroon;
+  font-size: 3rem;
+  font-family: sans-serif, "Arial";
+}
+div #survey-p {
+  margin: 2vw;
+}
+div #survey-p p {
+  font-size: 1.2rem;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(black, darkred, darkred);
+  text-align: center;
+}
+nav a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav li {
+  list-style: none;
+  width: 15px;
+  display: inline-flex;
+  margin: 50px;
+}
+form {
+  display: inline-block;
+  background-color: beige;
+  width: 45%;
+  padding: 0.5rem;
+  padding-top: 2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 2%;
+  box-sizing: border-box;
+}
+form > div {
+  display: inline-block;
+  width: 100%;
+  margin: 0.2rem;
+  box-sizing: border-box;
+}
+input {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+}
+input::placeholder {
+  color: red;
+}
+label {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+input#mailing-list-input {
+  margin: 1rem 0 1rem 0;
+  float: left;
+}
+label#mailing-list-label {
+  float: right;
+}
+fieldset input {
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+}
+fieldset label {
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+}
+label#experience-text-label {
+  width: 100%;
+}
+input#experience-text {
+  width: 100%;
+  height: 10rem;
+}
+h2#form-one-header {
+  margin-left: 3vw;
+  background-color: #b31419;
+  width: 15%;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1rem;
+  position: absolute;
+  color: white;
+}
+h2#form-two-header {
+  background-color: #b31419;
+  margin-left: 3vw;
+  width: 27%;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1rem;
+  position: absolute;
+  color: white;
+  display: inline-block;
+  float: right;
+}
+div.header-divs {
+  position: relative;
+  background-color: red;
+  color: white;
+  padding: 5px;
+}
+div#yes-no-div {
+  display: inline-block;
+  width: 45%;
+  box-sizing: border-box;
+}
+button {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+div#buttons {
+  text-align: center;
+  height: 5vh;
+}
+footer {
+  background: linear-gradient(darkred, black);
+  height: 20vh;
+}
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <img id="banner-logo" src="">
+            <nav>
+              <a href="">home</a>
+              <a href="">menu</a>
+              <a href="">directions</a>
+              <a href="">coupons</a>
+              <a href="">orders</a>
+              <a href="">catering</a>
+              <a href="">reviews</a>
+            </nav>
+            <div id="survey-p">
+              <h1>Customer Survey</h1>
+              <p>Thank you for taking our customer survey. Your response helps Red Ball Pizza maintain the tradition that has made us the top-rated pizzeria in the metro area. All participants are automatically entered into a monthly drawing to receive a Red Ball Express PizzaFest containing two large pizzas, a 2-liter soda, and a side order of chicken wings. Check your e-mail inbox for contest results. <br> <br> Surveys are private and confidential. Red Ball Pizza will not share your contact information with third parties, ever. <br><br> Required values are marked by an asterisk (*) </p>
+            </div>
+            <h2 id="form-one-header">Customer Information</h2>
+            <form id="customer-information">
+              <div>
+                <label for="name-input">Name*</label>
+                <input type="text" placeholder="first and last name" id="name-input">
+              </div>
+              <div>
+                <label for="street-address-input"> Street Address</label>
+                <input type="text" id="street-address-input">
+              </div>
+              <div>
+                <label for="city-input">City</label>
+                <input type="text" id="city-input">
+              </div>
+              <div>
+                <label for="state-input">State</label>
+                <input type="text" id="state-input">
+              </div>
+              <div>
+                <label for="postal-input">Postal Code</label>
+                <input placeholder="nnnnn (-nnnn)" type="text" id="postal-input">
+              </div>
+              <div>
+                <label for="phone-input">Phone Number</label>
+                <input type="text" id="phone-input" placeholder="(nnn) nnn-nnnn">
+              </div>
+              <div>
+                <label for="email-input">E-mail*</label>
+                <input type="text" id="email-input">
+              </div>
+              <div>
+                <label for="referral-source">Where did you hear about us? <br> (Select all that apply)</label>
+                <select id="referral-source" size="5">
+                  <option value="internet">Internet</option>
+                  <option value="magazine">Magazine</option>
+                  <option value="newspaper">Newspaper</option>
+                  <option value="word-of-mouth">Word of Mouth</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="favorite-dish-input">What's your favorite dish?</label>
+                <input type="text" id="favorite-dish-input">
+              </div>
+              <div>
+                <label for="dine-out-count">How many times do you dine out per month?</label>
+                <input type="number" id="dine-out-count" min="0" value="0">
+              </div>
+              <div>
+                <input type="checkbox" id="mailing-list-input">
+                <label for="mailing-list-input" id="mailing-list-label">Add me to your mailing list for great coupons and specials!</label>
+              </div>
+            </form>
+            <h2 id="form-two-header">Share Your Experience at Red Ball Pizza</h2>
+            <form id="customer-experience">
+              <div>
+                <label for="visit-date-input">Date of Visit</label>
+                <input type="date">
+              </div>
+              <div>
+                <label for="order-type-input">Order Type</label>
+                <select id="order-type-input" size="1">
+                  <option value="carry-out">Carry Out</option>
+                  <option value="delivery">Delivery</option>
+                  <option value="dine-in">Dine in</option>
+                  <option value="take-bake">Take 'n bake</option>
+                </select>
+              </div>
+              <div>
+                <label for="yes-no-first">Was your service friendly?</label>
+                <fieldset class="yes-no-option" id="yes-no-first">
+                  <div id="yes-no-div">
+                    <label for="yes-friendly">Yes</label>
+                    <input type="radio" id="yes-friendly">
+                  </div>
+                  <div id="yes-no-div">
+                    <label for="no-friendly">No</label>
+                    <input type="radio" id="no-friendly">
+                  </div>
+                </fieldset>
+              </div>
+              <div>
+                <label for="yes-no-second">Was your order correct?</label>
+                <fieldset class="yes-no-option" id="yes-no-second">
+                  <div id="yes-no-div">
+                    <label for="yes-order">Yes</label>
+                    <input type="radio" id="yes-order">
+                  </div>
+                  <div id="yes-no-div">
+                    <label for="no-order">No</label>
+                    <input type="radio" id="no-order">
+                  </div>
+                </fieldset>
+              </div>
+              <div>
+                <label for="yes-no-third">Was your food hot?</label>
+                <fieldset class="yes-no-option" id="yes-no-third">
+                  <div>
+                    <div id="yes-no-div">
+                      <label for="yes-hot">Yes</label>
+                      <input type="radio" id="yes-hot">
+                    </div>
+                    <div id="yes-no-div">
+                      <label for="no-hot">No</label>
+                      <input type="radio" id="no-hot">
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div>
+                <label for="service-rating">Rate the overall service <br> (0=poor; 10=great)</label>
+                <input type="range" value="5" step="1" min="0" max="10" id="service-rating">
+              </div>
+              <div>
+                <label for="experience-text" id="experience-text-label">Tell us more about your experience</label>
+                <input type="text" id="experience-text">
+              </div>
+            </form>
+            <div id="buttons">
+              <button type="button" id="submit-button">Submit My Survey</button>
+              <button type="button" id="cancel-button">Cancel</button>
+            </div>
+            <footer>
+          
+            </footer>
+          </div>
+        <script>const bannerLogo = document.getElementById("banner-logo");
+            const customerInfoForm = document.getElementById("customer-information");
+            
+            let hamburgerSrc =
+              "https://drive.google.com/uc?id=1CnkfA7eH9vAEcuHo-eSbTh0QQdnpIcQb";
+            let redX = "https://drive.google.com/uc?id=1DhvGl41dsjs4X2VE4skPXMj6tRzDVHOB";
+            let greenCheck =
+              "https://drive.google.com/uc?id=1LDcwQ0vWPkphHPOMDOzOZ8ei3P5hEunv";
+            let bannerSrc =
+              "https://drive.google.com/uc?id=1XVrJasLndnCWu2aB1AbxBrHP4CxtZ7YP";
+            let checkerBoard =
+              "https://drive.google.com/uc?id=1xTkMkhjX350bTk1q0hZXm6RwQKKK0j4T";
+            
+            document.body.style.backgroundImage = `url(${checkerBoard})`;
+            bannerLogo.src = bannerSrc;
+            
+            customerInfoForm.addEventListener("submit", function (event) {
+              event.preventDefault();
+            });
+            </script>
+    </body>
+</html>
